@@ -1,0 +1,37 @@
+@keyframes animateCart {
+  from{
+    transform: scale(4);
+    transition: all .2s;
+  }
+  to{
+    transform: scale(1);
+    transition: all .2s;
+  }
+}
+
+.cart{
+  background-color: #000;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.12rem;
+  height: 3.12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 1.5rem;
+    animation: animateCart .5s;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+.hide{
+  display: none;
+}

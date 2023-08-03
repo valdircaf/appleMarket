@@ -1,0 +1,34 @@
+@use '../variables.scss';
+@keyframes showPage {
+  from{
+    transform: translate(-100%);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+@keyframes playOnce {
+
+  to {
+    visibility: hidden;
+  }
+}
+
+.container-confirm{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: variables.$font-family-regular;
+  font-weight: 400;
+  animation: showPage .5s;
+  background-color: #FFF;
+  img{
+    color: green;
+    animation: playOnce 7s steps(1) forwards;
+  }
+  .showImg{
+    margin-bottom: 5rem;
+  }
+}

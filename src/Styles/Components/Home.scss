@@ -1,0 +1,177 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+@keyframes openPage {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes openSecondPage {
+  from{
+    top: 0;
+  }
+  to{
+    top: 90vh;
+  }
+}
+
+.container-home{
+  font-family: variables.$font-family-regular;
+  .btn{
+    @extend %btn;
+  }
+  .container-ip14{
+    margin-top: 5.875rem;
+    background: var(--background-home, #f5f5f7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.375rem;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: openPage 4s;
+    @include mixins.phone2{
+      gap: 3rem;
+      margin-top: 0;
+      padding: 2rem;
+    }
+    @include mixins.desktop-height2{
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    @include mixins.phone-height{
+      gap: 2.5rem;
+      margin-top: 0rem;
+    }
+    h4{
+      font-size: 1.25rem;
+      color: var(--gray-paragraph-color, #949494);
+      @include mixins.phone2{
+        font-size: 1rem;
+      }
+      @include mixins.desktop-height2{
+        font-size: 1.2rem;
+      }
+    }
+    h3{
+      color: var(--black-color, #000);
+      font-size: 1.375rem;
+      font-weight: 700;
+      @include mixins.phone2{
+        font-size: 1rem;
+      }
+      @include mixins.desktop-height2{
+        font-size: 1.2rem;
+      }
+    }
+    h1{
+      font-size: 3.75rem;
+      font-weight: 500;
+      @include mixins.phone2{
+        font-size: 2.5rem;
+      }
+      @include mixins.desktop-height2{
+        font-size: 3rem;
+      }
+    }
+    h2{
+      font-size: 1.75rem;
+      color: var(--gray-h-2-color, #7E7E7E);
+      font-weight: 500;
+      @include mixins.phone{
+        font-size: 1.4rem;
+      }
+      @include mixins.phone2{
+        font-size: 1rem;
+      }
+      @include mixins.desktop-height2{
+        font-size: 1.4rem;
+      }
+    }
+    picture{
+      img{
+        width: 20.43rem;
+        @include mixins.phone{
+          width: 10rem;
+        }
+        @include mixins.desktop-height{
+          width: 10rem;
+        }
+        @include mixins.phone-height{
+          width: 8rem;
+        }
+      }
+    }
+  }
+  .container-ip14Pro{
+    background: var(--bg-black, #010101);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.375rem;
+    padding-top: 5.875rem;
+    margin-top: 1.875rem;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    top: 90vh;
+    animation: openSecondPage 3s;
+    @include mixins.phone2{
+      padding-bottom: 2rem;
+    }
+    h1{
+      font-size: 3.75rem;
+      font-weight: 500;
+      @include mixins.phone2{
+        font-size: 2.5rem;
+      }
+    }
+    h2{
+      font-size: 1.75rem;
+      font-weight: 500;
+      @include mixins.phone{
+        font-size: 1.4rem;
+      }
+      @include mixins.phone2{
+        font-size: 1rem;
+      }
+    }
+    h3{
+      @include mixins.phone2{
+        font-size: 1rem;
+      }
+    }
+    picture{
+      .phone{
+        display: none;
+      }
+      .desktop{
+        display: block;
+        width: 79rem;
+        margin-top: 12.5rem;
+      }
+      @include mixins.phone{
+        .phone{
+          display: block;
+          width: 11rem;
+        }
+        .desktop{
+          display: none;
+        }
+      }
+      img{
+        @include mixins.phone{
+          width: 25rem;
+          margin-top: 55%;
+        }
+      }
+    }
+  }
+}

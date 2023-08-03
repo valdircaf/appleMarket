@@ -1,0 +1,47 @@
+@mixin phone{
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin phone2 {
+  @media (max-width: 376px) {
+    @content;
+  }
+}
+
+@mixin phone-height{
+  @media (max-height: 667px) {
+    @content;
+  }
+}
+
+@mixin desktop2{
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin desktop3{
+  @media (max-width: 1450px) {
+    @content;
+  }
+}
+
+@mixin desktop-height{
+  @media (max-height: 1080px) {
+    @content;
+  }
+}
+
+@mixin desktop-height2{
+  @media (max-height: 880px) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (max-width: 900px) {
+    @content;
+  }
+}

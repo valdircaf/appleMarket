@@ -1,0 +1,578 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+@keyframes blinkImage {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes openPage {
+  from{
+    transform: translate(-10%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.swal-overlay{
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.swal-modal {
+  background-color: rgba(0, 0, 0, 0.69);
+  border: 3px solid white;
+}
+
+.swal-title {
+  margin: 0px;
+  font-size: 2rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  margin-bottom: 28px;
+  font-family: variables.$font-family-regular;
+  color: #FFF;
+}
+
+.swal-button {
+  padding: 10px 30px;
+  border-radius: 2px;
+  background-color: #0066cc;
+  font-size: 12px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  font-family: variables.$font-family-regular;
+}
+
+.container{
+  font-family: variables.$font-family-regular;
+  .container-buy{
+    background: var(--background-home, #FAFAFA);
+    padding: 2rem 8.125rem 0 8.125rem;
+    display: flex;
+    height: 100vh;
+    animation: openPage 1s;
+    @include mixins.desktop3{
+      padding: 2rem;
+    }
+    @include mixins.tablet{
+      flex-direction: column;
+    }
+    .left-side{
+      display: flex;
+      flex-direction: column;
+      gap: 3.375rem;
+      justify-content: center;
+      @include mixins.desktop3{
+        width: 100%;
+      }
+      h1{
+        font-weight: 500;
+        color: #000;
+        font-size: 4rem;
+        @include mixins.desktop3{
+          font-size: 3.5rem;
+        }
+      }
+      h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .image{
+        background-image: url('../../Assets/Img/iPhone14-Pro-Buy.png');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        animation: blinkImage .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+        @include mixins.phone2{
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      .fadeOut{
+        opacity: 0;
+      }
+      .Vermelho{
+        background-image: url('../../Assets/Img/Vermelho.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Azul{
+        background-image: url('../../Assets/Img/Azul.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Roxo{
+        background-image: url('../../Assets/Img/Roxo.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Amarelo{
+        background-image: url('../../Assets/Img/Amarelo.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Meia-Noite{
+        background-image: url('../../Assets/Img/Meia-Noite.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Estelar{
+        background-image: url('../../Assets/Img/Estelar.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Roxo-Profundo{
+        background-image: url('../../Assets/Img/Roxo-Profundo.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Dourado{
+        background-image: url('../../Assets/Img/Dourado.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Prateado{
+        background-image: url('../../Assets/Img/Prateado.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 67.5rem;
+        height: 50rem;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+      .Preto-Espacial{
+          background-image: url('../../Assets/Img/Preto-Espacial.jpeg');
+          background-position: center;
+          background-size: cover;
+          width: 67.5rem;
+          height: 50rem;
+          opacity: 1;
+        transition: .2s ease-in-out;
+        @include mixins.desktop2{
+          width: 50rem;
+          height: 25rem;
+        }
+        @include mixins.desktop3{
+          width: 100%;
+        }
+      }
+    }
+    .right-side{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.375rem;
+      justify-content: center;
+      width: 100%;
+      @include mixins.tablet{
+        height: 100%;
+      }
+      @include mixins.phone{
+        margin-top: 3rem;
+      }
+      h3{
+        font-weight: 500;
+        font-size: 2rem;
+        span{
+          color: var(--gray-paragraph-color, #949494);
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        font-weight: 500
+      }
+    }
+    .btn{
+      @extend %btn;
+    }
+    .colors{
+      display: flex;
+      gap: 1.25rem;
+      div{
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid transparent;
+        @include mixins.phone{
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        &:focus{
+          border: 3px solid #0066cc;
+        }
+      }
+
+    }
+  }
+  .final-buy{
+    background: #F5F5F7;
+    padding: 3.875rem 0;
+    @include mixins.tablet{
+      margin-top: 20rem;
+      padding: 0;
+    }
+    @include mixins.phone{
+      margin-top: 10rem;
+      padding: 1rem;
+    }
+    @include mixins.phone2{
+      margin-top: 30rem;
+    }
+    .container-final-buy{
+      display: flex;
+      justify-content: center;
+      gap: 10rem;
+      @include mixins.tablet{
+        gap: 4rem;
+        padding: 0 1rem 0 1rem;
+      }
+      @include mixins.phone{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .buy-left-side{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include mixins.phone{
+          align-items: center;
+          gap: 0;
+        }
+        @include mixins.tablet{
+          gap: 0;
+        }
+        h1{
+          font-size: 2.5rem;
+          font-weight: 500;
+          @include mixins.tablet{
+            font-size: 2rem;
+          }
+          span{
+            color: var(--gray-paragraph-color, #949494);
+          }
+        }
+        .VermelhoBuy{
+          background-image: url('../../Assets/Img/Vermelho.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .AzulBuy{
+          background-image: url('../../Assets/Img/Azul.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .RoxoBuy{
+          background-image: url('../../Assets/Img/Roxo.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .AmareloBuy{
+          background-image: url('../../Assets/Img/Amarelo.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .Meia-NoiteBuy{
+          background-image: url('../../Assets/Img/Meia-noite.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .EstelarBuy{
+          background-image: url('../../Assets/Img/Estelar.png');
+          background-position: center;
+          background-size: cover;
+          width: 22.63rem;
+          height: 13.75rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .Roxo-ProfundoBuy{
+          background-image: url('../../Assets/Img/Roxo-Profundo.png');
+          background-position: center;
+          background-size: cover;
+          width: 23.63rem;
+          height: 17.2rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .DouradoBuy{
+          background-image: url('../../Assets/Img/Dourado.png');
+          background-position: center;
+          background-size: cover;
+          width: 23.63rem;
+          height: 17.2rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 10.2rem;
+          }
+        }
+        .PrateadoBuy{
+          background-image: url('../../Assets/Img/Prateado.png');
+          background-position: center;
+          background-size: cover;
+          width: 23.63rem;
+          height: 17.2rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+        .Preto-EspacialBuy{
+          background-image: url('../../Assets/Img/Preto-Espacial.png');
+          background-position: center;
+          background-size: cover;
+          width: 23.63rem;
+          height: 17.2rem;
+          transition: .2s ease-in-out;
+          @include mixins.tablet{
+            width: 10.63rem;
+            height: 10.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+      .buy-right-side{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        @include mixins.phone{
+          align-items: center;
+        }
+        h1{
+          font-size: 1.2rem;
+          color: #2D2D2D;
+          font-weight: 400;
+        }
+        h2{
+          font-size: 1.2rem;
+        }
+        h3{
+          display: flex;
+          align-items: center;
+          gap: .3rem;
+          font-size: 1.2rem;
+          svg{
+            font-size: 2rem;
+          }
+        }
+        h4{
+          color: #2D2D2D;
+          font-weight: 400;
+        }
+        .btn-sell{
+          background: var(--blue, #06C);
+          width: 20.93rem;
+          height: 3.29rem;
+          border-radius: 10px;
+          color: #FFF;
+          border: transparent;
+          font-size: 1.2rem;
+          font-family: variables.$font-family-regular;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+          @include mixins.tablet{
+            width: 15rem;
+          }
+          @include mixins.phone{
+            width: 20rem;
+          }
+          &:hover{
+            transition: all .2s ease-in-out;
+            background: var(--blue, #0077ee);
+          }
+        }
+
+        .disable{
+          background: #767676;
+          width: 20.93rem;
+          height: 3.29rem;
+          border-radius: 10px;
+          color: #FFF;
+          border: transparent;
+          font-size: 1.2rem;
+          font-family: variables.$font-family-regular;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+          @include mixins.tablet{
+            width: 15rem;
+          }
+          @include mixins.phone{
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
