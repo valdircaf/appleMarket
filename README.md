@@ -42,3 +42,7 @@ O Apple Market vem como uma réplica do sistema de compras original da Apple. El
 
 ## 📄 License
 Este projeto possui uma licença MIT. Para mais detalhes, [Acessar Licença](https://github.com/valdircaf/appleMarket/blob/main/LICENSE).
+
+## 🔗 Link
+O projeto está disponível para testes no link abaixo:
+[Acessar site](https://apple-market-liard.vercel.app/)
