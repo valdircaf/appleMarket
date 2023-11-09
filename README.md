@@ -2,6 +2,14 @@
     Apple Market 🛒
 </h1>
 
+https://github.com/valdircaf/appleMarket/assets/70548483/be66602f-991b-44d1-8b5e-8afcd3248532
+
+<h1>
+    <video width="320" height="520">
+        <source src="https://github.com/valdircaf/appleMarket/assets/70548483/e1452700-acd1-4cb8-8cc6-503410f3ff70"/>
+    </video>
+</h1>
+
 <h1>
     <img src="./src/Assets/Img/Site.png"/>
 </h1>
